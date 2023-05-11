@@ -1,4 +1,4 @@
-#include <iostream>
+ï»¿#include <iostream>
 using namespace std;
 
 void main()
@@ -8,7 +8,7 @@ void main()
 	int array[]{ 0, 1, 2, 3, 4, 5, 6, 7, 8, 9 };
 	int array2[size];
 	int n;
-	cout << "Ñäâèíóòü ìàññèâ âëåâî íà: "; cin >> n;
+	cout << "Ð¡Ð´Ð²Ð¸Ð½ÑƒÑ‚ÑŒ Ð¼Ð°ÑÑÐ¸Ð² Ð²Ð»ÐµÐ²Ð¾ Ð½Ð°: "; cin >> n;
 	for (int i = 0; i < size - n; i++)
 	{
 		array2[i] = array[i + n];
