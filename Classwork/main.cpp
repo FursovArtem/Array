@@ -1,26 +1,28 @@
 ﻿#include <iostream>
+#include <vector>
 using namespace std;
+
+void convert_to_binary(int decimal)
+{
+	vector<int> vec;
+	while (decimal >= 2)
+	{
+		vec.insert(vec.begin(), decimal % 2);
+		decimal /= 2;
+	}
+	vec.insert(vec.begin(), decimal);
+	for (auto i : vec)
+	{
+		cout << i;
+	}
+	cout << endl;
+}
 
 void main()
 {
 	setlocale(LC_ALL, "");
-	const int size = 10;
-	int array[]{ 0, 1, 2, 3, 4, 5, 6, 7, 8, 9 };
-	int array2[size];
-	int n;
-	cout << "Сдвинуть массив влево на: "; cin >> n;
-	for (int i = 0; i < size - n; i++)
-	{
-		array2[i] = array[i + n];
-	}
-	for (int i = 0; i < n; i++)
-	{
-		array2[size - n + i] = array[i];
-	}
-
-
-	for (int i : array2)
-	{
-		cout << i << "\t";
-	}
+	int decimal;
+	cout << "Введите число в десятичной системе счисления: "; cin >> decimal;
+	cout << "В двоичной системе это число: "; convert_to_binary(decimal);
+	cout << "В шестнадцатиричной системе счисления это число: " << hex << decimal;
 }

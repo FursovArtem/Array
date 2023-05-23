@@ -7,7 +7,7 @@ void randomize(int(&arr)[10])
 {
 	for (int i = 0; i < sizeof(arr) / sizeof(int); i++)
 	{
-		arr[i] = rand() % RAND_MAX + 1;
+		arr[i] = rand() % (80 - 70) + 70;
 	}
 }
 void bubble_sort(int(&arr)[10])
