@@ -2,7 +2,7 @@
 #include <vector>
 using namespace std;
 
-void convert_to_binary(int decimal)
+void to_binary(int decimal)
 {
 	vector<int> vec;
 	while (decimal >= 2)
@@ -23,6 +23,6 @@ void main()
 	setlocale(LC_ALL, "");
 	int decimal;
 	cout << "Введите число в десятичной системе счисления: "; cin >> decimal;
-	cout << "В двоичной системе это число: "; convert_to_binary(decimal);
+	cout << "В двоичной системе это число: "; to_binary(decimal);
 	cout << "В шестнадцатиричной системе счисления это число: " << hex << decimal;
 }
