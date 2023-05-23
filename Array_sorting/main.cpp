@@ -36,6 +36,7 @@ void main()
 		cout << i << "\t";
 	}
 	cout << endl;
+
 	bubble_sort(arr);
 	for (int i : arr)
 	{
