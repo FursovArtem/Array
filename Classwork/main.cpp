@@ -28,7 +28,7 @@ void to_hexadecimal(int decimal)
 		vec.push_back(decimal % 16);
 		vec[i] += vec[i] < 10 ? 48 : 55;
 	}
-	for (i--;i >=0;i--)
+	for (i--; i >= 0; i--)
 	{
 		cout << vec[i];
 	}
