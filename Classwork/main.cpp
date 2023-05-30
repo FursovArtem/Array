@@ -21,42 +21,18 @@ void to_binary(int decimal)
 
 void to_hexadecimal(int decimal)
 {
-	string str;
-	while (decimal >= 16)
+	vector<char> vec;
+	int i = 0;
+	for (; decimal; decimal /= 16, i++)
 	{
-		int remain = decimal % 16;
-		if (remain >= 10)
-		{
-			if (remain == 10) str += "a";
-			if (remain == 11) str += "b";
-			if (remain == 12) str += "c";
-			if (remain == 13) str += "d";
-			if (remain == 14) str += "e";
-			if (remain == 15) str += "f";
-		}
-		else
-		{
-			str += to_string(remain);
-		}
-		decimal /= 16;
+		vec.push_back(decimal % 16);
+		vec[i] += vec[i] < 10 ? 48 : 55;
 	}
-	if (decimal >= 10)
+	for (i--;i >=0;i--)
 	{
-		if (decimal == 10) str += "a";
-		if (decimal == 11) str += "b";
-		if (decimal == 12) str += "c";
-		if (decimal == 13) str += "d";
-		if (decimal == 14) str += "e";
-		if (decimal == 15) str += "f";
+		cout << vec[i];
 	}
-	else
-	{
-		str += to_string(decimal);
-	}
-	for (int i = str.length() - 1; i >= 0; i--)
-	{
-		cout << str[i];
-	}
+	cout << endl;
 }
 
 void main()
