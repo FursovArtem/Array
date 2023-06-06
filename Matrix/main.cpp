@@ -1,4 +1,4 @@
-#include <iostream>
+ï»¿#include <iostream>
 using namespace std;
 
 void main()
@@ -9,7 +9,7 @@ void main()
 	int second_array[rows][columns];
 	int result_array[rows][columns];
 
-	cout << "Ïåðâàÿ ìàòðèöà" << endl;
+	cout << "ÐŸÐµÑ€Ð²Ð°Ñ Ð¼Ð°Ñ‚Ñ€Ð¸Ñ†Ð°" << endl;
 	for (int i = 0; i < rows; i++)
 	{
 		for (int j = 0; j < columns; j++)
@@ -21,7 +21,7 @@ void main()
 	}
 	cout << endl;
 
-	cout << "Âòîðàÿ ìàòðèöà" << endl;
+	cout << "Ð’Ñ‚Ð¾Ñ€Ð°Ñ Ð¼Ð°Ñ‚Ñ€Ð¸Ñ†Ð°" << endl;
 	for (int i = 0; i < rows; i++)
 	{
 		for (int j = 0; j < columns; j++)
@@ -33,7 +33,7 @@ void main()
 	}
 	cout << endl;
 
-	cout << "Ñëîæåíèå" << endl;
+	cout << "Ð¡Ð»Ð¾Ð¶ÐµÐ½Ð¸Ðµ" << endl;
 	for (int i = 0; i < rows; i++)
 	{
 		for (int j = 0; j < columns; j++)
@@ -45,7 +45,7 @@ void main()
 	}
 	cout << endl;
 
-	cout << "Âû÷èòàíèå" << endl;
+	cout << "Ð’Ñ‹Ñ‡Ð¸Ñ‚Ð°Ð½Ð¸Ðµ" << endl;
 	for (int i = 0; i < rows; i++)
 	{
 		for (int j = 0; j < columns; j++)
@@ -57,10 +57,10 @@ void main()
 	}
 	cout << endl;
 
-	//Äëÿ óìíîæåíèÿ íóæíî ÷òîáû êîëè÷åñòâî ñòîëáöîâ â îäíîé
-	//ìàòðèöå ñîâïàäàëî ñ êîëè÷åñòâîì ñòðîê â äðóãîé
+	//Ð”Ð»Ñ ÑƒÐ¼Ð½Ð¾Ð¶ÐµÐ½Ð¸Ñ Ð½ÑƒÐ¶Ð½Ð¾ Ñ‡Ñ‚Ð¾Ð±Ñ‹ ÐºÐ¾Ð»Ð¸Ñ‡ÐµÑÑ‚Ð²Ð¾ ÑÑ‚Ð¾Ð»Ð±Ñ†Ð¾Ð² Ð² Ð¾Ð´Ð½Ð¾Ð¹
+	//Ð¼Ð°Ñ‚Ñ€Ð¸Ñ†Ðµ ÑÐ¾Ð²Ð¿Ð°Ð´Ð°Ð»Ð¾ Ñ ÐºÐ¾Ð»Ð¸Ñ‡ÐµÑÑ‚Ð²Ð¾Ð¼ ÑÑ‚Ñ€Ð¾Ðº Ð² Ð´Ñ€ÑƒÐ³Ð¾Ð¹
 	int second_array_for_multiplie[columns][rows];
-	cout << "Âòîðàÿ ìàòðèöà äëÿ óìíîæåíèÿ" << endl;
+	cout << "Ð’Ñ‚Ð¾Ñ€Ð°Ñ Ð¼Ð°Ñ‚Ñ€Ð¸Ñ†Ð° Ð´Ð»Ñ ÑƒÐ¼Ð½Ð¾Ð¶ÐµÐ½Ð¸Ñ" << endl;
 	for (int i = 0; i < columns; i++)
 	{
 		for (int j = 0; j < rows; j++)
@@ -72,9 +72,9 @@ void main()
 	}
 	cout << endl;
 
-	//Ðåçóëüòàòîì óìíîæåíèÿ ìàòðèöû 3x5 íà 5x3 áóäåò ìàòðèöà ðàçìåðîì 3x3
+	//Ð ÐµÐ·ÑƒÐ»ÑŒÑ‚Ð°Ñ‚Ð¾Ð¼ ÑƒÐ¼Ð½Ð¾Ð¶ÐµÐ½Ð¸Ñ Ð¼Ð°Ñ‚Ñ€Ð¸Ñ†Ñ‹ 3x5 Ð½Ð° 5x3 Ð±ÑƒÐ´ÐµÑ‚ Ð¼Ð°Ñ‚Ñ€Ð¸Ñ†Ð° Ñ€Ð°Ð·Ð¼ÐµÑ€Ð¾Ð¼ 3x3
 	int mult[rows][rows]{};
-	cout << "Óìíîæåíèå" << endl;
+	cout << "Ð£Ð¼Ð½Ð¾Ð¶ÐµÐ½Ð¸Ðµ" << endl;
 	for (int i = 0; i < rows; i++)
 	{
 		for (int j = 0; j < rows; j++)
@@ -89,7 +89,7 @@ void main()
 	}
 	cout << endl;
 
-	//Îïðåäåëèòåëü ìàòðèöû
+	//ÐžÐ¿Ñ€ÐµÐ´ÐµÐ»Ð¸Ñ‚ÐµÐ»ÑŒ Ð¼Ð°Ñ‚Ñ€Ð¸Ñ†Ñ‹
 	// [ a, b, c ]
 	// [ d, e, f ]
 	// [ g, h, i ]
